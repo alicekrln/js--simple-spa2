@@ -1,4 +1,4 @@
-import "../../style.css";
+import "./home.css"
 import { navigateTo } from "../../router.js";
 
 export default function Home() {
@@ -9,12 +9,18 @@ export default function Home() {
     });
     
     return `
-        <div class="home">
-            <span id="snake-logo" class="game-emoji" role="img" aria-label="Snake">🐍</span>
-            <span id="tictactoe-logo" class="game-emoji" role="img" aria-label="Tic Tac Toe">✖️⭕</span>
-            <span id="yatzy-logo" class="game-emoji" role="img" aria-label="Yatzy">🎲</span>
+        <div class="container">
+            <div class="game-logos">
+               
+                <img src="../../../assets/Logo-Snake.png" id="snake-logo" class="game-emoji snake" alt="Snake Game"/>
+
+                <img src="../../../assets/Logo-TicTacToe.png" id="tictactoe-logo" class="game-emoji tictactoe" alt="Tic Tac Toe Game"/>
+
+                <img src="../../../assets/Logo-Yatzy.png" id="yatzy-logo" class="game-emoji yatzy" alt="Yatzy Game"/>
+
+            </div>
+            <h1 class="project-title">Game Hub</h1>
+            <footer class="click-to-start">Click on the emoji to start the game</footer>
         </div>
-        <h1>The Three Games</h1>
-        <p class="footer">Click on the emoji to start the game</p>
     `;
 }

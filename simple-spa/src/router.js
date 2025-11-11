@@ -2,12 +2,14 @@ import Home from "./views/home/index";
 import TicTacToe from "./views/tictactoe/index";
 import Snake from "./views/snake/index";
 import Yatzy from "./views/yatzy/index";
+import Skeleton from "./views/skeleton";
 
 const routes = {
     "/": Home,
     "/tictactoe": TicTacToe,
     "/snake": Snake,
     "/yatzy": Yatzy,
+    "/skeleton":Skeleton,
 };
 
 export function navigateTo(path) {
