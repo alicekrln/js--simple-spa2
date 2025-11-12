@@ -20,7 +20,7 @@ export default function Home() {
 
             </div>
             <h1 class="project-title">Game Hub</h1>
-            <footer class="click-to-start">Click on the emoji to start the game</footer>
+            <footer class="click-to-start">Click on the Logo to start the game</footer>
         </div>
     `;
 }

@@ -1,9 +1,5 @@
-
 import "./skeleton.css"
 import { navigateTo } from "../../router.js";
-
-
-
 
 
 export default function Skeleton() {
@@ -14,14 +10,14 @@ export default function Skeleton() {
 
   return `
    
-    <div class="game">
+    <div class="kotaina">
       <nav>
         <button id="back-home">
           <img src="../../../assets/Icon-Home.svg" class="home" alt="home"/>
           <span>Home</span>
         </button>
 
-        <div> 
+        <div class="group-settings"> 
           <button id="game-rules">
             <img src="../../../assets/Icon-GameRules.svg" class="gameRules" alt="game rules"/>
             <span>Game Rules</span>

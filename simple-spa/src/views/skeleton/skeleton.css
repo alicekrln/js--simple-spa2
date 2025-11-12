@@ -8,23 +8,27 @@
 }
 
 
-.game {
+.kotaina {
   width: fit-content;
   width: 100%;
   margin: 0 auto;
   color: black;
   background-color: var(--Green-Dark-v1);
+
+  padding: 20px;
+  
+
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 60px;
 }
 
 main {
-  width: 958.5px;
-  height: 581px;
+  width: 842.5px;
+  height: 470px;
 
   margin: 0 auto;
 
@@ -32,12 +36,19 @@ main {
   border-radius: 20px;
 }
 
+.group-settings{
+  display: flex;
+  gap: 5px;
+}
+
 footer{
   color: gainsboro;
   font-size: small;
   font-style: italic;
+  /* padding: 20px; */
   text-align: center;
   margin-top: 30px;
+  
 }
 
 /* Components */
@@ -45,8 +56,9 @@ button {
   width: 55px;
   height: 55px;
   border-radius: 12px;
-  background-color: hsl(0, 0%, 90%);
+  background-color: var(--Green-Muted);
   border: none;
+  
 
 
   &:hover {
