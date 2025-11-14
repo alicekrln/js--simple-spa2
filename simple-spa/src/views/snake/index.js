@@ -1,11 +1,10 @@
-import Navbar from '../navbar/index.js';
+import "./style.css";
 
 export default function Snake() {
-return `
-  ${Navbar()}
-    <div class="game">
-      <h1>Snake</h1>
-      <p>zzzzzzzznake</p>
-    </div>
-  `
-};
+    return `
+        <div class="snake-container">
+            <canvas id="snake-board" width="400" height="400"></canvas>
+            <button id="start-snake">Start</button>
+        </div>
+    `;
+}

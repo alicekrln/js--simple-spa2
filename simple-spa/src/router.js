@@ -9,18 +9,37 @@ const routes = {
     "/tictactoe": TicTacToe,
     "/snake": Snake,
     "/yatzy": Yatzy,
-    "/skeleton":Skeleton,
 };
 
 export function navigateTo(path) {
-    window.history.pushState({}, '', path)
-    renderRoute()
-};
+    window.history.pushState({}, "", path);
+    renderRoute();
+}
+
+// export function renderRoute() {
+//     const path = window.location.pathname;
+//     const View = routes[path] || Home;
+
+//     // ALWAYS RENDER THE BASE SKELETON
+//     document.querySelector("#app").innerHTML = Skeleton();
+
+//     // INSERT THE VIEW INSIDE <main> of skeleton
+//     const main = document.querySelector("main");
+//     main.innerHTML = View();   // <--- this is where the game UI is mounted
+// }
 
 export function renderRoute() {
     const path = window.location.pathname;
-    const view = routes[path] || Home;
-    document.querySelector("#app").innerHTML = view();
-};
+    const View = routes[path] || Home;
+
+    if (path === "/") {
+        document.querySelector("#app").innerHTML = View();
+        return;
+    }
+
+    // All other pages use Skeleton
+    document.querySelector("#app").innerHTML = Skeleton();
+    document.querySelector("main").innerHTML = View();
+}
 
 window.addEventListener("popstate", renderRoute);

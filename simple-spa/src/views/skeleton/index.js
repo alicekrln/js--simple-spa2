@@ -8,7 +8,7 @@ export default function Skeleton() {
     document.getElementById('back-home')?.addEventListener('click', () => navigateTo('/'))
   });
 
-  return `
+    return `
    
     <div class="kotaina">
       <nav>
