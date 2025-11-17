@@ -5,9 +5,7 @@
   gap: 14px;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   font-family: "Courier New", Courier, monospace;
-  background-color: hsl(171deg 43 15) ;
 }
 
 .game-board-wrapa{
