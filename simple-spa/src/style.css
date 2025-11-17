@@ -27,4 +27,21 @@ html,body{
 }
 
 
+/* src/style.css */
+:root {
+--primary: #1abc9c;
+--bg: #0b3a2e;
+--accent: #6ee7cb;
+--text: #ffffff;
+}
+
+
+body {
+margin:0;
+background: var(--bg);
+color: var(--text);
+font-family: system-ui, sans-serif;
+}
+
+
 

@@ -20,20 +20,18 @@
 
 }
 
-nav {
+nav.skeleton-nav {
   display: flex;
   justify-content: space-around;
   margin-bottom: 60px;
 }
 
-main {
-  width: 842.5px;
-  height: 470px;
-
+main.skeleton-main {
+  width: 80%;
   margin: 0 auto;
 
   background: #163732;
-  border-radius: 20px;
+  border-radius: 40px;
 }
 
 .group-settings{
@@ -41,7 +39,7 @@ main {
   gap: 5px;
 }
 
-footer{
+footer.skeleton-footer{
   color: gainsboro;
   font-size: small;
   font-style: italic;
@@ -52,7 +50,7 @@ footer{
 }
 
 /* Components */
-button {
+button.skeleton-btn {
   width: 55px;
   height: 55px;
   border-radius: 12px;
