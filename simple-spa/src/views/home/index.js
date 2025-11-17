@@ -12,7 +12,7 @@ export default function Home() {
         <div class="container">
             <div class="game-logos">
                
-                <img src="../../../assets/Logo-Snake.png" id="snake-logo" class="game-emoji snake" alt="Snake Game"/>
+                <img src="../../../assets/Logo-Snake.png" id="snake-logo" class="game-emoji" alt="Snake Game"/>
 
                 <img src="../../../assets/Logo-TicTacToe.png" id="tictactoe-logo" class="game-emoji tictactoe" alt="Tic Tac Toe Game"/>
 
